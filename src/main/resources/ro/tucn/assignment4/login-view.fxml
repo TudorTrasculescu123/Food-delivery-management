@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.tucn.assignment4.Controller.LoginController">
+   <children>
+      <HBox prefHeight="318.0" prefWidth="9.0" />
+      <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="150.0">
+         <children>
+            <VBox prefHeight="69.0" prefWidth="150.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="111.0" text="Username" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="29.0" prefWidth="150.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="111.0" text="Password" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="39.0" prefWidth="150.0" />
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#goBack" prefHeight="39.0" prefWidth="100.0" text="&lt;- Back" />
+            <VBox prefHeight="38.0" prefWidth="150.0" />
+            <Label fx:id="labelText" alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="151.0" text="Don't have an account?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="329.0" prefWidth="212.0">
+         <children>
+            <VBox prefHeight="69.0" prefWidth="150.0" />
+            <TextField fx:id="usernameField" prefHeight="44.0" prefWidth="205.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <VBox prefHeight="38.0" prefWidth="150.0" />
+            <PasswordField fx:id="passwordField" prefHeight="41.0" prefWidth="223.0" />
+            <VBox prefHeight="44.0" prefWidth="212.0" />
+            <Button fx:id="enterButton" mnemonicParsing="false" onAction="#enterPressed" prefHeight="39.0" prefWidth="106.0" text="Log In" />
+            <VBox prefHeight="32.0" prefWidth="212.0" />
+            <Button fx:id="registerButton" mnemonicParsing="false" onAction="#registerPressed" prefHeight="39.0" prefWidth="106.0" text="Register" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

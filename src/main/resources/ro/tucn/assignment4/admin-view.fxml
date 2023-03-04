@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="749.0" prefWidth="1152.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.tucn.assignment4.Controller.AdminController">
+   <children>
+      <TableView fx:id="productsTable" layoutX="247.0" layoutY="120.0" prefHeight="601.0" prefWidth="869.0" />
+      <Button layoutX="45.0" layoutY="120.0" mnemonicParsing="false" onAction="#addPressed" prefHeight="62.0" prefWidth="134.0" text="Add base product" />
+      <Button fx:id="backButton" layoutX="45.0" layoutY="613.0" mnemonicParsing="false" onAction="#backPressed" prefHeight="62.0" prefWidth="134.0" text="&lt;- Back" />
+      <Button layoutX="45.0" layoutY="220.0" mnemonicParsing="false" onAction="#editPressed" prefHeight="62.0" prefWidth="134.0" text="Edit product" />
+      <Button layoutX="45.0" layoutY="324.0" mnemonicParsing="false" onAction="#removePressed" prefHeight="62.0" prefWidth="134.0" text="Remove product" />
+      <Button layoutX="247.0" layoutY="29.0" mnemonicParsing="false" onAction="#loadPressed" prefHeight="62.0" prefWidth="134.0" text="Load from .CSV" />
+      <Button layoutX="45.0" layoutY="515.0" mnemonicParsing="false" onAction="#addCompositePressed" prefHeight="62.0" prefWidth="134.0" text="Add composite" />
+      <Label alignment="CENTER" layoutX="98.0" layoutY="494.0" prefHeight="10.0" prefWidth="21.0" text="|" />
+      <Label alignment="BASELINE_CENTER" layoutX="98.0" layoutY="481.0" prefHeight="26.0" prefWidth="21.0" text="^">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addCompositeField" layoutX="34.0" layoutY="440.0" prefHeight="41.0" prefWidth="149.0" promptText="Insert title for composite" />
+      <Button fx:id="rep1Button" layoutX="408.0" layoutY="29.0" mnemonicParsing="false" onAction="#rep1Pressed" prefHeight="62.0" prefWidth="134.0" text="Generate Report 1" />
+      <Button fx:id="rep2Button" layoutX="564.0" layoutY="29.0" mnemonicParsing="false" onAction="#rep2Pressed" prefHeight="62.0" prefWidth="134.0" text="Generate Report 2" />
+      <Button fx:id="rep3Button" layoutX="727.0" layoutY="29.0" mnemonicParsing="false" onAction="#rep3Pressed" prefHeight="62.0" prefWidth="134.0" text="Generate Report 3" />
+      <Button fx:id="rep4Button" layoutX="884.0" layoutY="29.0" mnemonicParsing="false" onAction="#rep4Pressed" prefHeight="62.0" prefWidth="134.0" text="Generate Report 4" />
+   </children>
+</AnchorPane>
